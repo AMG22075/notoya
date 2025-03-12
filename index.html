@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notoya</title>
-    <meta id="meta-description" name="description" content="Timeless Notebooks to Inspire the Soul.">
+    <meta id="meta-description" name="description" content="Timeless Notebooks to Inspire the Soul">
     <meta name="keywords" content="Timeless,Notebooks,Soul,Mindfulness,Motivational,Inspirational,Gift">
     <meta name="author" content="Notoya">
     <meta name="theme-color" content="#ffda1f" />
@@ -79,7 +79,7 @@
       <img src="https://raw.githubusercontent.com/AMG22075/notoya/refs/heads/main/img/logotext.png" alt="Brand Logo" class="w-28">
     </header>
     <!-- Language Flags -->
-    <div class="absolute top-6 right-6 flex gap-0.5">
+    <div class="absolute top-2 right-6 flex gap-0.5">
       <div class="flag-container">
         <img src="https://flagcdn.com/w20/gb.png" class="flag-icon border" data-lang="en" alt="English">
         <span class="tooltip">English</span>
@@ -109,8 +109,7 @@
             </svg>
           </span>
         </a>
-        <!--
-        <a href="" id="shopAmazon" class="button bg-[#ffda1f] hover:bg-opacity-90 text-[#736c1a] py-2 px-6 rounded-md text-md text-center w-full flex items-center justify-center">
+        <a href="" id="shopAmazon" class="hidden button bg-[#ffda1f] hover:bg-opacity-90 text-[#736c1a] py-2 px-6 rounded-md text-md text-center w-full flex items-center justify-center">
           <span class="button-text font-serif">
             <span id="shopAmazonText">Buy on Amazon</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" class="size-5 ml-2 stroke-[0.5]">
@@ -118,7 +117,6 @@
             </svg>
           </span>
         </a>
-        -->
       </nav>
     </div>
     <footer class="mt-16 flex flex-col items-center gap-2">
@@ -128,9 +126,7 @@
       </a>
       --> 
       <p class="text-xs text-[#736c1a] mt-4 font-serif">&copy; Notoya, <span id="currentYear"></span></p>
-      <!--
-      <p id="locationText" class="text-xs text-[#736c1a] font-serif">Tokyo, Japan</p>
-      -->
+      <p id="locationText" class="hidden text-xs text-[#736c1a] font-serif">Tokyo, Japan</p>
     </footer>
     <script>
       document.getElementById("currentYear").textContent = new Date().getFullYear();
@@ -139,7 +135,7 @@
           const translations = {
               en: { textAbovePhoto: "Timeless Notebooks to Inspire the Soul", shopEtsyText: "Shop on Etsy", shopAmazonText: "Shop on Amazon", locationText: "Tokyo, Japan", metaDescription: "Timeless Notebooks to Inspire the Soul" },
               it: { textAbovePhoto: "Timeless Notebooks to Inspire the Soul", shopEtsyText: "Shop on Etsy", shopAmazonText: "Shop on Amazon", locationText: "Tokyo, Japan", metaDescription: "Timeless Notebooks to Inspire the Soul" },
-              ja: { textAbovePhoto: "魂を刺激する時代を超えたノートブック", shopEtsyText: "Etsyで購入", shopAmazonText: "Amazonで購入", locationText: "東京、日本", metaDescription: "魂を刺激する時代を超えたノートブック"  },
+              ja: { textAbovePhoto: "魂を刺激する時代を超えたノートブック", shopEtsyText: "Etsyで購入", shopAmazonText: "Amazonで購入", locationText: "東京、日本", metaDescription: "魂を刺激する時代を超えたノートブック" },
           };
       
           document.getElementById("textAbovePhoto").textContent = translations[lang].textAbovePhoto;
